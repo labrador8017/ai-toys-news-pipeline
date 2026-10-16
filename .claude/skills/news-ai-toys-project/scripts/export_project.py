@@ -32,6 +32,7 @@ PROJECT_ITEMS = [
     "Документы/Конвейер-новостей_инструкция-тестирования_2026-10-17.md",
     "Документы/Новости",
     "Документы/Скрипты",
+    "Документы/Демо",
     "Результат/Конвейер-новостей_описание-проекта_2026-10-17.md",
     "Результат/Пульт-конвейера.html",
     "Результат/Посты",
@@ -143,6 +144,7 @@ def write_root_readme(out, deploy_section):
         return f"{m.group(1)}({PROJECT_NAME}/{link})"
 
     text = re.sub(r"(\[[^\]]*\])\(([^)]+)\)", fix, text)
+    text = re.sub(r'(<img[^>]*\bsrc=")(?!https?:|/)([^"]+)"', lambda m: f'{m.group(1)}{PROJECT_NAME}/{m.group(2)}"', text)
     note = (f"> Код и данные проекта — в папке [`{PROJECT_NAME}/`]({PROJECT_NAME}/), агенты и скиллы Claude Code — в `.claude/`. "
             "Пути в командах ниже даны от папки проекта.\n\n")
     first_break = text.find("\n\n")
