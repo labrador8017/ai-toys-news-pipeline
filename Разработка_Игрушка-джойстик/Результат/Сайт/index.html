@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Интерактивная сказка — фигурка-джойстик для детей 4–8 лет</title>
+<meta name="description" content="Фигурка героя сказки с датчиком наклона управляет персонажем на экране. Ребёнок сам выбирает, как пойдёт сказка.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=2026-10-16">
+</head>
+<body>
+
+<!-- 0. Шапка -->
+<header class="topbar">
+  <a class="logo" href="#top" aria-label="Интерактивная сказка — на главную">
+    <span class="logo__mark" aria-hidden="true">✦</span>
+    <span>Интерактивная<br>сказка</span>
+  </a>
+  <nav class="nav" aria-label="Основное меню">
+    <a href="#how">Как играть</a>
+    <a href="#tales">Сказки</a>
+    <a href="#trust">Кто делает</a>
+    <a href="news.html">Новости</a>
+  </nav>
+  <a class="btn btn--dark btn--sm" href="#signup">Записаться</a>
+</header>
+
+<main id="top">
+
+  <!-- 1. Hero -->
+  <section class="hero">
+    <div class="hero__text">
+      <div class="pills reveal">
+        <span class="pill">4–8 лет</span>
+        <span class="pill">Фигурка + экран</span>
+      </div>
+      <h1 class="reveal">Сказка, в&nbsp;которой ребёнок решает сам</h1>
+      <p class="hero__lead reveal">Мультик можно только смотреть. А нашу сказку проживают руками: ребёнок наклоняет фигурку — и&nbsp;герой на&nbsp;экране идёт туда, куда решил малыш. На&nbsp;каждой развилке — его выбор и&nbsp;его история.</p>
+      <div class="hero__actions reveal">
+        <a class="btn btn--dark" href="#signup">Записаться в первую партию</a>
+        <a class="link-arrow" href="#how">Как это работает ↓</a>
+      </div>
+    </div>
+
+    <div class="fan" id="fan" aria-hidden="true">
+      <figure class="card card--1" style="--c:#FFD43B"><img src="assets/img/hero-kolobok.jpg" alt=""><figcaption>Колобок</figcaption></figure>
+      <figure class="card card--2" style="--c:#FF8A1F"><img src="assets/img/hero-devochka.jpg" alt=""><figcaption>Гуси-лебеди</figcaption></figure>
+      <figure class="card card--3" style="--c:#9C82FF"><img src="assets/img/hero-lisa.jpg" alt=""><figcaption>Лиса</figcaption></figure>
+      <figure class="card card--4" style="--c:#FF8A1F"><img src="assets/img/hero-petuh.jpg" alt=""><figcaption>Заюшкина избушка</figcaption></figure>
+      <figure class="card card--5" style="--c:#FFD43B"><img src="assets/img/hero-koza.jpg" alt=""><figcaption>Козлята</figcaption></figure>
+      <p class="fan__hint">наклоните курсор или телефон&nbsp;↻</p>
+    </div>
+  </section>
+
+  <!-- 2. Жёлтый баннер + демо -->
+  <section class="banner-wrap">
+    <div class="banner reveal">
+      <span class="banner__spark banner__spark--a" aria-hidden="true">✦</span>
+      <span class="banner__spark banner__spark--b" aria-hidden="true">✦</span>
+      <div class="banner__copy">
+        <h2>Наклони — и&nbsp;герой пойдёт</h2>
+        <p>Внутри фигурки — датчик наклона и&nbsp;две кнопки. Никаких геймпадов и&nbsp;пальцев по&nbsp;экрану: ребёнок держит любимого героя в&nbsp;руках, а&nbsp;сказка отвечает на&nbsp;каждое движение.</p>
+      </div>
+
+      <div class="demo" id="demo">
+        <p class="demo__label">Попробуйте развилку</p>
+        <div class="demo__stage">
+          <img class="demo__hero" src="assets/img/hero-kolobok.jpg" alt="Колобок">
+          <span class="demo__vs">и</span>
+          <img class="demo__hero" src="assets/img/char-lisa-old.jpg" alt="Лиса">
+        </div>
+        <p class="demo__q" id="demoText">Колобок встретил Лису. Что делать?</p>
+        <div class="demo__choices">
+          <button class="btn btn--dark btn--sm" data-choice="sing">Спеть песенку</button>
+          <button class="btn btn--light btn--sm" data-choice="run">Укатиться в кусты</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Польза -->
+  <section class="sheet" id="why">
+    <div class="sheet__head">
+      <h2 class="reveal">Почему это важно</h2>
+      <p class="sheet__aside reveal">Экран никуда не денется. Но&nbsp;мы можем решить, каким будет время перед ним.</p>
+    </div>
+    <div class="benefits">
+      <article class="benefit reveal">
+        <img src="assets/img/char-zayac.jpg" alt="Заяц из сказки «Колобок»">
+        <h3>Экран, который двигает</h3>
+        <p>Вместо часа неподвижного залипания — игра, где нужно вставать, поворачиваться и&nbsp;балансировать фигуркой.</p>
+      </article>
+      <article class="benefit reveal">
+        <img src="assets/img/char-volk.jpg" alt="Волк из сказки «Колобок»">
+        <h3>Выбор и&nbsp;последствия</h3>
+        <p>Сказка ветвится. Ребёнок видит: от&nbsp;его решения зависит, чем всё закончится. Так тренируются логика и&nbsp;ответственность.</p>
+      </article>
+      <article class="benefit reveal">
+        <img src="assets/img/char-medved.jpg" alt="Медведь из сказки «Колобок»">
+        <h3>Ловкие руки</h3>
+        <p>Плавный наклон, точное нажатие кнопки — мелкая моторика и&nbsp;координация работают без&nbsp;скучных прописей.</p>
+      </article>
+      <article class="benefit reveal">
+        <img src="assets/img/char-pechka.jpg" alt="Печка из сказки «Гуси-лебеди»">
+        <h3>Родные сказки</h3>
+        <p>Колобок, Гуси-лебеди, Заюшкина избушка — сюжеты, на&nbsp;которых выросли родители, теперь можно пройти вместе.</p>
+      </article>
+    </div>
+
+    <!-- 4. Как это работает -->
+    <div class="how" id="how">
+      <h2 class="reveal">Как это работает</h2>
+      <ol class="steps">
+        <li class="step reveal"><span class="step__n">1</span><h3>Возьми героя</h3><p>Прочная фигурка из&nbsp;безопасного пластика удобно лежит в&nbsp;детской руке.</p></li>
+        <li class="step reveal"><span class="step__n">2</span><h3>Включи сказку</h3><p>Фигурка подключается к&nbsp;планшету или телевизору по&nbsp;Bluetooth за&nbsp;пару секунд.</p></li>
+        <li class="step reveal"><span class="step__n">3</span><h3>Играй и&nbsp;выбирай</h3><p>Наклоняй, чтобы идти, жми кнопку, чтобы действовать. Финалов несколько — проходи снова и&nbsp;снова.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 5. Каталог сказок -->
+  <section class="tales" id="tales">
+    <div class="sheet__head">
+      <h2 class="reveal">Пять сказок для&nbsp;старта</h2>
+      <p class="sheet__aside reveal">Выберите, какую хотите первой, — мы учтём голос при&nbsp;запуске.</p>
+    </div>
+    <div class="grid">
+      <article class="tale reveal">
+        <div class="tale__pic"><img src="assets/img/tale-kolobok.jpg" alt="Колобок на носу у Лисы"><div class="tags"><span>4+</span><span>15 мин</span><span>5 развилок</span></div></div>
+        <h3>Колобок</h3>
+        <p>Укатись от&nbsp;Зайца, Волка и&nbsp;Медведя — и&nbsp;перехитри Лису. Петь, бежать или спрятаться — решать тебе.</p>
+        <button class="btn btn--dark btn--block" data-tale="Колобок">Хочу эту сказку</button>
+      </article>
+      <article class="tale reveal">
+        <div class="tale__pic"><img src="assets/img/tale-tri-medvedya.jpg" alt="Девочка в доме медведей"><div class="tags"><span>4+</span><span>15 мин</span><span>4 развилки</span></div></div>
+        <h3>Три медведя</h3>
+        <p>Загляни в&nbsp;дом медведей: какую миску выбрать, на&nbsp;какой стул сесть — и&nbsp;успеешь ли убежать?</p>
+        <button class="btn btn--dark btn--block" data-tale="Три медведя">Хочу эту сказку</button>
+      </article>
+      <article class="tale reveal">
+        <div class="tale__pic"><img src="assets/img/tale-lisa-zayac.jpg" alt="Петух прогоняет Лису из избушки"><div class="tags"><span>4+</span><span>20 мин</span><span>4 развилки</span></div></div>
+        <h3>Лиса и&nbsp;заяц</h3>
+        <p>Помоги Зайке вернуть избушку. Кого позвать на&nbsp;помощь — Пса, Медведя или Петуха?</p>
+        <button class="btn btn--dark btn--block" data-tale="Лиса и заяц">Хочу эту сказку</button>
+      </article>
+      <article class="tale reveal">
+        <div class="tale__pic"><img src="assets/img/tale-gusi.jpg" alt="Избушка Бабы-яги и гуси-лебеди"><div class="tags"><span>5+</span><span>25 мин</span><span>6 развилок</span></div></div>
+        <h3>Гуси-лебеди</h3>
+        <p>Догони гусей и&nbsp;спаси братца. Печка, Яблоня и&nbsp;Речка помогут — если ответишь им добром.</p>
+        <button class="btn btn--dark btn--block" data-tale="Гуси-лебеди">Хочу эту сказку</button>
+      </article>
+      <article class="tale reveal">
+        <div class="tale__pic"><img src="assets/img/tale-volk.jpg" alt="Волк врывается к козлятам"><div class="tags"><span>4+</span><span>15 мин</span><span>4 развилки</span></div></div>
+        <h3>Волк и&nbsp;семеро козлят</h3>
+        <p>Мама-коза ушла. Открывать ли дверь? Узнай голос и&nbsp;спрячь козлят.</p>
+        <button class="btn btn--dark btn--block" data-tale="Волк и семеро козлят">Хочу эту сказку</button>
+      </article>
+      <article class="tale tale--soon reveal">
+        <div class="tale__soon"><span class="tale__soon-mark" aria-hidden="true">?</span></div>
+        <h3>Ваша сказка</h3>
+        <p>Какую сказку оживить следующей? Напишите в&nbsp;заявке — самые популярные сделаем первыми.</p>
+        <a class="btn btn--light btn--block" href="#signup">Предложить</a>
+      </article>
+    </div>
+    <p class="note">Время и число развилок — предварительные, уточнятся после написания сценариев.</p>
+  </section>
+
+  <!-- 6. Доверие -->
+  <section class="sheet sheet--trust" id="trust">
+    <div class="trust">
+      <div class="trust__copy">
+        <h2 class="reveal">Делаем сами — от&nbsp;модели до&nbsp;коробки</h2>
+        <ul class="facts">
+          <li class="reveal"><b>[N лет]</b> своё производство изделий из металла и пластика</li>
+          <li class="reveal"><b>3D-печать</b> прототипов и литьё мелкой серии в своём цехе</li>
+          <li class="reveal"><b>ESP32 + датчик движения</b> — проверенная электроника внутри фигурки</li>
+          <li class="reveal"><b>Народные сказки</b> — без чужих персонажей и лицензий</li>
+        </ul>
+      </div>
+      <figure class="trust__art reveal">
+        <img src="assets/img/char-kolobok-old.jpg" alt="Колобок, иллюстрация 1913 года">
+        <figcaption>Колобок, книга 1913&nbsp;г. Сказкам — века, игре — 2026&nbsp;год.</figcaption>
+      </figure>
+    </div>
+
+    <div class="reviews">
+      <blockquote class="review reveal"><p>«[Отзыв родителя с бета-теста — заглушка]»</p><cite>[Имя, город, ребёнку N лет]</cite></blockquote>
+      <blockquote class="review reveal"><p>«[Отзыв воспитателя детского сада — заглушка]»</p><cite>[Имя, детский сад, город]</cite></blockquote>
+      <blockquote class="review reveal"><p>«[Отзыв родителя с бета-теста — заглушка]»</p><cite>[Имя, город, ребёнку N лет]</cite></blockquote>
+    </div>
+
+    <div class="partners" aria-label="Партнёры">
+      <span>[Логотип партнёра]</span><span>[Логотип партнёра]</span><span>[Логотип партнёра]</span><span>[Логотип партнёра]</span>
+    </div>
+  </section>
+
+  <!-- 7. CTA -->
+  <section class="cta" id="signup">
+    <div class="cta__box reveal">
+      <div class="cta__copy">
+        <h2>Запишитесь в&nbsp;первую партию</h2>
+        <p>Первая партия — <b>[N]</b> наборов. Участникам — <b>[скидка / бонус]</b> и&nbsp;ранний доступ к&nbsp;новым сказкам.</p>
+        <img class="cta__art" src="assets/img/hero-devochka.jpg" alt="" aria-hidden="true">
+      </div>
+      <form class="form" id="form" novalidate>
+        <label>Имя<input name="name" autocomplete="given-name" required></label>
+        <label>Телефон или e-mail<input name="contact" autocomplete="email" required></label>
+        <div class="row">
+          <label>Возраст ребёнка
+            <select name="age"><option>3–4 года</option><option selected>5–6 лет</option><option>7–8 лет</option></select>
+          </label>
+          <label>Какую сказку первой
+            <select name="tale" id="taleSelect">
+              <option>Колобок</option><option>Три медведя</option><option>Лиса и заяц</option><option>Гуси-лебеди</option><option>Волк и семеро козлят</option><option>Другая — напишу</option>
+            </select>
+          </label>
+        </div>
+        <fieldset class="seg">
+          <legend>Для кого</legend>
+          <label><input type="radio" name="who" value="family" checked><span>Для семьи</span></label>
+          <label><input type="radio" name="who" value="b2b"><span>Детский сад / центр</span></label>
+        </fieldset>
+        <label class="check"><input type="checkbox" name="agree" required><span>Согласен на обработку персональных данных — <a href="#">[политика]</a></span></label>
+        <button class="btn btn--dark btn--block" type="submit">Записаться</button>
+        <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- 8. Футер -->
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <a class="logo logo--light" href="#top"><span class="logo__mark" aria-hidden="true">✦</span><span>Интерактивная<br>сказка</span></a>
+    </div>
+    <nav><h4>Продукт</h4><a href="#how">Как играть</a><a href="#tales">Сказки</a><a href="news.html">Новости</a><a href="#signup">Записаться</a></nav>
+    <nav><h4>Детским садам</h4><a href="#signup">Пилотный проект</a><a href="#">[Методичка]</a></nav>
+    <nav><h4>Контакты</h4><span>[+7 000 000-00-00]</span><span>[hello@example.ru]</span><span>[Город, адрес]</span></nav>
+    <div class="footer__card">
+      <h4>Для детских садов</h4>
+      <p>Проведём бесплатное пилотное занятие для&nbsp;группы.</p>
+      <a class="btn btn--light btn--sm" href="#signup" data-who="b2b">Оставить заявку</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 Интерактивная сказка</span>
+    <a href="#">[Политика обработки персональных данных]</a>
+    <span>[Реквизиты]</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

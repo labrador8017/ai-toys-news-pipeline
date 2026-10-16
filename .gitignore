@@ -1,0 +1,11 @@
+# Секреты: доступы к хостингу, ключи API (образец — .env.example)
+.env
+.env.txt
+known_hosts
+
+# Служебное
+__pycache__/
+tmp/
+*/tmp/
+.playwright-mcp/
+.claude/settings.local.json
